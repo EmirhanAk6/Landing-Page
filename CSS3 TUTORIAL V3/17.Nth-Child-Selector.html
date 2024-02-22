@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-Child Selector</title>
+    <style>
+        p {
+            font-size: 1.5rem;
+        }
+
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+        /* n = 0 b = 0 , 0 2 4 6 8 10 */
+        ul li:nth-child(2n){
+            color: red;
+        }
+        ul li:nth-child(2n+1){
+            color: blue;
+        }
+
+        /* p:first-child{
+            background-color: blue;
+        }
+        p:last-child{
+            background-color: blueviolet;
+        }
+        p:nth-child(1){
+            color: red;
+        }
+        p:nth-child(3){
+            color:orange
+        } */
+
+        /* p:nth-child(even){
+            color: red;
+        }
+        p:nth-child(odd){
+            color: violet;
+        } */
+
+        /* an + b  n = 0, b=0*/
+    </style>
+</head>
+<body>
+    <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptates.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptates.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptates.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptates.
+    </p> -->
+
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+/* Tüm h1'leri seç */
+        /* h1{
+            color: red;
+            background-color: blue;
+        }
+        
+        p{
+            color: red;
+            background-color: blue;
+        } */
+
+/* Hem h1 hem p leri seçmek için */
+
+        /* h1,p{
+            color: red;
+            background-color: blue;
+        } */
+
+/* id belirtecei # */
+
+        /* #logo{
+            color: red;
+            background-color: blue;
+        } */
+/* class belirteci nokta */
+
+        /* .info{
+            color: red;
+            background-color: green;
+        } */
+
+/* id'si para1 ve class'ı lead olanı seçmek istersek */
+
+        #para1.lead {
+            color: red;
+            background-color: yellow;
+        }
+        
+        /* a{
+            text-decoration: none;
+        } */
+
+/* ul'in altındaki li'nin altındaki a'ları seçmek istersek */
+
+        ul li a{
+            text-decoration: none;
+        }
+
+/* class'ı info olanın altındaki span'leri çek */
+
+        /* .info span{
+            color: red;
+            background-color: blue;
+        } */
+
+/* class'ı info olanların altındaki class'ı primary olanları seç */
+ 
+        .info .primary{
+            color: red;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>
+        Header2
+    </h1>
+    <p id="para1" class="lead info">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, exercitationem!
+    </p>
+    <p class="info">
+        Lorem ipsum <span class="primary">dolor</span> sit, amet consectetur adipisicing elit. Quam, harum.
+    </p>
+    <p class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, asperiores.
+    </p>
+    <p>Test Paragraph</p>
+    
+    <a href="#">Home</a>
+</body>
+</html>
